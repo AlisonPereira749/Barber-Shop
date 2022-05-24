@@ -1,5 +1,7 @@
 # Barber Shop - Bigode Grosso
 
+![Previu](assets/imagens/previu.png)
+
 > ## Sobre o projeto
 <p>O site da barbearia Bigode Grosso foi desenvolvido por mim, Antonio Alison.<br> Tudo começou quando começei a estudar a ferramenta Figma como o professor David do canal Chief Of Design no yuotube, no curso o professor usou como exemplo um site de barbearia. Gostei da idéia e no decorrer do curso fui colocando minhas idéias em prática, criando meu primeiro layout com o Figma.</p>
 
