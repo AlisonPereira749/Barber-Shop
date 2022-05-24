@@ -1,0 +1,463 @@
+@import url(../fontawesome/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;800&display=swap');
+
+:root {
+    ---font: 'Barlow Condensed', sans-serif;
+    ---font-ico: "fontawesome";
+    ---vermelho: #E01B14;
+    ---Laranja: #F18836;
+    ---Branco: #FFFFFF;
+    ---Cinza-Primário: #373C40;
+    ---Cinza-Secundário: #272A31;
+    ---Cinza-Terceária: #9CA5B4;
+}
+
+/* Padrões */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: var(---font);
+    font-size: 18px;
+    color: var(---Branco);
+}
+
+.title {
+    font-size: 40px;
+    color: var(---vermelho);
+    font-weight: bold;
+}
+
+h3.caption {
+    font-weight: 500;
+    color: var(---Laranja);
+    font-size: 22px;
+    padding-top: 5px;
+    border-top: 3px solid var(---Laranja);
+    display: inline;
+}
+
+span {
+    font-weight: 500;
+    color: var(---vermelho);
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-shadow: 2px 1px 3px #101010;
+}
+
+a {
+    color: var(---Branco);
+}
+
+.btn {
+    padding: 5px 8px;
+    color: var(---Branco);
+    background-color: var(---vermelho);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e01b14b9;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+#sowcase {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/hero-G.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .logo {
+    width: 150px;
+}
+
+.menu__links {
+    display: flex;
+    height: 20px;
+    width: 270px;
+    justify-content: space-between;
+}
+
+.menu__links--list {
+    position: relative;
+}
+
+.menu__itens {
+    padding: 0 5px;
+}
+
+.menu__itens::after {
+    content: "";
+    position: absolute;
+    background-color: var(---Laranja);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.menu__itens:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.ico--local::before {
+    font-family: var(---font-ico);
+    content: "\f3c5";
+    margin-right: 5px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico--whats::before {
+    font-family: var(---font-ico);
+    content: "\f232";
+    margin-right: 5px;
+    font-size: 1.2rem;
+    color: var(---vermelho);
+}
+
+.sowcase__intro h1 {
+    margin-bottom: 30px;
+}
+
+.text {
+    max-width: 400px;
+    color: var(---Branco);
+    margin-bottom: 15px;
+}
+
+/* Sobre nós */
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about--title {
+    margin-top: 15px;
+}
+
+.text--about {
+    color: var(---Cinza-Secundário);
+    margin-top: 30px;
+}
+
+.about__image img {
+    width: 400px;
+}
+
+/* Depoimentos */
+.testimonies {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagens/depoimentos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-color: #020202d9;
+    background-blend-mode: color;
+}
+
+.box__title {
+    padding-top: 100px;
+    text-align: center;
+}
+.box__title .title-ttm {
+    padding: 15px 0 30px 0;
+}
+
+/* Citações */
+.box__testimonies {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.testimony {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+/* SERVIÇOS */
+.services {
+    width: 100%;
+    background-color: var(---Cinza-Secundário);
+}
+
+.title-svc {
+    padding: 15px 0 30px 0;
+}
+
+main.box__services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__item {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__item .caption-svc {
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.services__item .btn-svc {
+    margin-top: 30px;
+    padding: 5px 30px;
+}
+
+.services__item.corte {
+    background-image: url(../imagens/corte.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #02020280;
+    background-blend-mode: color;
+}
+
+.services__item.barba {
+    background-image: url(../imagens/barba.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #02020280;
+    background-blend-mode: color;
+}
+
+.services__item.coloracao {
+    background-image: url(../imagens/coloracao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #02020280;
+    background-blend-mode: color;
+}
+
+/* PREÇOS */
+.price__bg {
+    background-color: #373C40;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    top: 180px;
+    z-index: 1;
+}
+
+.price__border-desktop {
+    border: 1px solid #F18836;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__border-mobile {
+    text-align: center;
+    max-width: 460px;
+    width: 560px;
+    min-width: 400px;
+}
+
+.title-pc {
+    color: var(---Branco);
+    font-weight: 400;
+}
+
+.price__list {
+    width: 100%;
+    text-align: initial;
+}
+
+.name {
+    padding-top: 10px;
+}
+
+.price {
+    padding-top: 10px;
+    text-align: right;
+    color: var(---Laranja);
+}
+
+.line {
+    max-width: 60%;
+    width: 50%;
+    min-width: 40%;
+    border-bottom: 1px solid var(---Cinza-Secundário);
+}
+
+.btn-agendar {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.linha-vertical {
+    height: 160px;
+    border-right: 1px solid #F18836;
+    margin: auto;
+}
+
+/* CONTATO */
+.contact {
+    width: 100%;
+    height: 500px;
+    background-color: var(---Branco);
+    position: relative;
+}
+
+.box__contact {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -140px;
+}
+
+.contact__infor {
+    width: 50%;
+    background-color: var(---Cinza-Primário);
+    padding: 30px;
+}
+
+.border-contact {
+    border: 1px solid var(---Laranja);
+    padding: 30px;
+}
+
+.item {
+    padding-top: 10px;
+}
+
+.ico_local::before {
+    font-family: var(---font-ico);
+    content: "\f3c5";
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico_whats::before {
+    font-family: var(---font-ico);
+    content: "\f232";
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico_mail::before {
+    font-family: var(---font-ico);
+    content: "\f0e0";
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico_hora::before {
+    font-family: var(---font-ico);
+    content: "\f017";
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico_dias::before {
+    font-family: var(---font-ico);
+    content: "\f274";
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.maps {
+    width: 50%;
+    height: 308px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding-top: 200px;
+    background-color: var(---Cinza-Secundário);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo__footer {
+    width: 300px;
+    margin-top: 100px;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.icon__face::before {
+    font-family: var(---font-ico);
+    content: "\f09a";
+    margin-right: 30px;
+    font-size: 40px;
+    color: var(---vermelho);
+}
+
+.icon__insta::before {
+    font-family: var(---font-ico);
+    content: "\f16d";
+    font-size: 40px;
+    color: var(---vermelho);
+}
+
+.social__midias .copyright {
+    margin-top: 30px;
+    color: #ffffffa1;
+}

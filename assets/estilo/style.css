@@ -1,0 +1,213 @@
+@import url(../fontawesome/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;800&display=swap');
+
+:root {
+    ---font: 'Barlow Condensed', sans-serif;
+    ---font-ico: "fontawesome";
+    ---vermelho: #E01B14;
+    ---Laranja: #F18836;
+    ---Branco: #FFFFFF;
+    ---Cinza-Primário: #373C40;
+    ---Cinza-Secundário: #272A31;
+    ---Cinza-Terceária: #9CA5B4;
+}
+
+/* Padrões */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: var(---font);
+    font-size: 18px;
+    color: var(---Branco);
+}
+
+.title {
+    font-size: 40px;
+    color: var(---vermelho);
+    font-weight: bold;
+}
+
+h3.caption {
+    font-weight: 500;
+    color: var(---Laranja);
+    font-size: 22px;
+    padding-top: 5px;
+    border-top: 3px solid var(---Laranja);
+    display: inline;
+}
+
+span {
+    font-weight: 500;
+    color: var(---vermelho);
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-shadow: 2px 1px 3px #101010;
+}
+
+a {
+    color: var(---Branco);
+}
+
+.btn {
+    padding: 5px 8px;
+    color: var(---Branco);
+    background-color: var(---vermelho);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Header */
+#sowcase {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/hero-G.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .logo {
+    width: 150px;
+}
+
+.menu__links {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.ico--local::before {
+    font-family: var(---font-ico);
+    content: "\f3c5";
+    margin-right: 5px;
+    font-size: 1rem;
+    color: var(---vermelho);
+}
+
+.ico--whats::before {
+    font-family: var(---font-ico);
+    content: "\f232";
+    margin-right: 5px;
+    font-size: 1.2rem;
+    color: var(---vermelho);
+}
+
+.sowcase__intro h1 {
+    margin-bottom: 30px;
+}
+
+.text {
+    max-width: 400px;
+    color: var(---Branco);
+    margin-bottom: 15px;
+}
+
+/* Sobre nós */
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about__infor p.text {
+    color: var(---Cinza-Secundário);
+}
+
+.about__image img {
+    width: 400px;
+}
+
+/* Depoimentos */
+.testimonies {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagens/depoimentos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-color: #020202d9;
+    background-blend-mode: color;
+
+    position: absolute;
+}
+
+.box__title {
+    position: relative;
+    top: 100px;
+}
+
+.box__testimonies {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 200px;
+}
+
+.testimony {
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony .quote {
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+/* Serviços */
+.services {
+    width: 100%;
+    height: 100vh;
+}
+
+.services__item {
+    width: 250;
+    height: 300px;
+}
+
+.services__item .corte {
+    background-image: url(../imagens/corte.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.services__item .barba {
+    background-image: url(../imagens/barba.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.services__item .coloracao {
+    background-image: url(../imagens/coloracao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
