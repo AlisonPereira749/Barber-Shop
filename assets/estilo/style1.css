@@ -195,13 +195,20 @@ a {
 }
 
 /* Citações */
+.sec2-container {
+    position: relative;
+    height: 100vh;
+}
+
 .box__testimonies {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 100px auto 0; */
+    /* padding-bottom: 15px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    position: absolute;
+    bottom: 15px;
 }
 
 .testimony {
@@ -351,12 +358,12 @@ main.box__services {
 }
 
 .box__contact {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: -140px;
+    position: relative;
+    top: 340px;
 }
 
 .contact__infor {
