@@ -79,8 +79,9 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .menu {
@@ -201,14 +202,14 @@ a {
 }
 
 .box__testimonies {
-    width: 100%;
-    /* margin: 100px auto 0; */
-    /* padding-bottom: 15px; */
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
+    margin: auto;
+    right: 13px;
 }
 
 .testimony {
@@ -317,7 +318,9 @@ main.box__services {
 }
 
 .price__list {
+    max-width: 100%;
     width: 100%;
+    min-width: 75%;
     text-align: initial;
 }
 
@@ -346,7 +349,7 @@ main.box__services {
 .linha-vertical {
     height: 160px;
     border-right: 1px solid #F18836;
-    margin: auto;
+    margin: auto 10px;
 }
 
 /* CONTATO */
@@ -367,7 +370,7 @@ main.box__services {
 }
 
 .contact__infor {
-    width: 50%;
+    width: 49%;
     background-color: var(---Cinza-Primário);
     padding: 30px;
 }
@@ -422,7 +425,7 @@ main.box__services {
 }
 
 .maps {
-    width: 50%;
+    width: 49%;
     height: 308px;
 }
 
