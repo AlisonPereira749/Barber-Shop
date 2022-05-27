@@ -1,0 +1,25 @@
+/* Preço */
+.price__bg {
+    width: 80%;
+    margin: auto;
+}
+
+.price__border-desktop {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+}
+
+.price__border-mobile {
+    width: 100%;
+    max-width: none;
+    border: 1px solid #F18836;
+    padding: 30px;
+}
+
+.linha-vertical {
+    width: 160px;
+    height: 0;
+    margin: 20px auto;
+    border: 1px solid #F18836;
+}
