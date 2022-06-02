@@ -1,5 +1,7 @@
 # Barber Shop - Bigode Grosso
 
+# EM DESENVOLVIMENTO
+
 ![Previu](assets/imagens/previu.png)
 
 > ## Sobre o projeto
