@@ -459,19 +459,20 @@ h5 {
 .icon__face::before {
     font-family: var(---font-ico);
     content: "\f09a";
-    margin-right: 30px;
-    font-size: 40px;
+    margin-right: 10px;
+    font-size: 30px;
     color: var(---vermelho);
 }
 
 .icon__insta::before {
     font-family: var(---font-ico);
     content: "\f16d";
-    font-size: 40px;
+    font-size: 30px;
     color: var(---vermelho);
 }
 
 .social__midias .copyright {
     margin-top: 30px;
     color: #ffffffa1;
+    font-size: 14px;
 }

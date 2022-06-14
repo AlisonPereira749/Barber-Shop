@@ -1,3 +1,21 @@
+/* Sobre */
+.text--about {
+    padding-right: 10px;
+}
+
+.about__image img {
+    max-width: 300px;
+}
+
+/* Serviços */
+main.box__services {
+    column-gap: 10px;
+}
+
+.services__item {
+    padding: 5px;
+}
+
 /* Preço */
 .price__bg {
     width: 80%;
@@ -28,3 +46,24 @@
 .name {}
 
 .price {}
+
+/* contato */
+.box__contact {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.contact__infor {
+    width: 70%;
+}
+
+.maps {
+    width: 70%;
+}
+
+/* Footer */
+.logo__footer {
+    width: 200px;
+    margin-top: 300px;
+}
