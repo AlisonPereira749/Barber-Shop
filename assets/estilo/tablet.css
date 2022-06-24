@@ -14,6 +14,17 @@ main.box__services {
 
 .services__item {
     padding: 5px;
+    max-width: 200px;
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+.services__item .caption-svc  {
+    padding-bottom: 15px;
+}
+
+.services__item .btn-svc  {
+    margin-top: 15px;
 }
 
 /* Preço */

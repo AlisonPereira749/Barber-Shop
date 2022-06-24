@@ -1,0 +1,60 @@
+/* Geral */
+h2.title {
+    font-size: 32px;
+}
+
+/* Sowcase */
+
+/* Sobre */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Depoimentos */
+
+/* Serviços */
+
+main.box__services {
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.title-svc {
+    max-width: 355px;
+    margin: auto;
+}
+
+.services__item {
+    max-width: 300px;
+    max-height: 350px;
+    padding: 30px;
+}
+
+/* Preço */
+.price__bg{
+    width: 100%;
+    padding: 15px;
+}
+
+.price__border-mobile {
+    padding: 25px 15px 15px 15px;
+}
+
+
+/* Conato */
+
+.contact__infor {
+    width: 80%;
+}
+
+.maps {
+    width: 80%;
+}
+
+/* Footer */
