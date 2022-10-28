@@ -10,6 +10,7 @@
 /* Serviços */
 main.box__services {
     column-gap: 10px;
+    justify-content: space-evenly;
 }
 
 .services__item {
@@ -53,10 +54,6 @@ main.box__services {
     border: 1px solid #F18836;
 }
 
-/* config tabela */
-.name {}
-
-.price {}
 
 /* contato */
 .box__contact {

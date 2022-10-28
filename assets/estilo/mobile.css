@@ -4,6 +4,18 @@ h2.title {
 }
 
 /* Sowcase */
+nav.menu .logo {
+    width: 100px;
+}
+
+.sowcase__intro {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.sowcase__intro > p {
+    margin: 20px auto;
+}
 
 /* Sobre */
 
@@ -17,7 +29,10 @@ h2.title {
 }
 
 /* Depoimentos */
-
+.box__testimonies {
+    row-gap: 20px;
+    padding-bottom: 30px;
+}
 /* Serviços */
 
 main.box__services {
@@ -47,6 +62,7 @@ main.box__services {
 }
 
 
+
 /* Conato */
 
 .contact__infor {
@@ -58,3 +74,48 @@ main.box__services {
 }
 
 /* Footer */
+
+/* CONFIGURAÇÕES PARA TELAS MENORES QUE 460px */
+@media screen and (max-width: 460px) {
+    /* Sowcase */
+
+    .menu__links {
+        max-width: 270px;
+        justify-content: flex-end;
+        column-gap: 10px;
+    }
+
+    .sowcase__intro {
+        margin-top: 30%;
+    }
+
+    .sowcase__intro h1 {
+        text-shadow: 2px 2px 1px #111;
+    }
+
+    /* PROCE */
+
+    .price__border-mobile {
+        padding: 25px 5px 15px 5px;
+        min-width: 100%;
+    }
+
+    .price__list {
+        width: 90%;
+        margin: auto;
+    }
+
+    .price__list .name {
+        font-size: 14px;
+    }
+
+    /* CONTACT */
+    
+    .contact__infor {
+        width: 100%;
+    }
+
+    .maps {
+        width: 100%;
+    }
+}
