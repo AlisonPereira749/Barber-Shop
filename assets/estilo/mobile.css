@@ -111,11 +111,28 @@ main.box__services {
 
     /* CONTACT */
     
+    .box__contact {
+        top: 240px;
+    }
+
     .contact__infor {
         width: 100%;
     }
 
     .maps {
         width: 100%;
+    }
+
+    /* FOOTER */
+    .logo__footer {
+        margin-top: 230px;
+    }
+}
+
+/* CONFIGURAÇÕES PARA TELAS MENORES QUE 460px */
+@media screen and (max-height: 670px) { 
+    .about {
+        height: auto;
+        padding: 20px 0;
     }
 }
